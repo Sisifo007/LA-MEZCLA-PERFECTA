@@ -21,7 +21,7 @@ export function MenuSection() {
       category: "cocktails",
       ingredients: "Pisco Quebranta, limón norteño, jarabe de goma, clara de huevo y amargo de Angostura.",
       description: "La joya de la coctelería peruana. Un balance perfecto entre la acidez del limón, el dulzor del jarabe y el carácter del pisco.",
-      image: "https://images.unsplash.com/photo-1570598912132-0ba1dc952b7d?q=80&w=800&auto=format&fit=crop"
+      image: "/images/pisco-sour.png"
     },
     {
       name: "Mojito Clásico",
@@ -31,18 +31,18 @@ export function MenuSection() {
       image: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=800&auto=format&fit=crop"
     },
     {
-      name: "Margarita",
+      name: "Margarita Clásica",
       category: "cocktails",
       ingredients: "Tequila reposado, triple sec, jugo de lima fresca y borde escarchado de sal.",
       description: "Un clásico mexicano sofisticado y cítrico que resalta las notas herbales del agave azul con el balance del licor de naranja.",
-      image: "https://images.unsplash.com/photo-1536935338788-846bb9981813?q=80&w=800&auto=format&fit=crop"
+      image: "/images/margarita-clasica.png"
     },
     {
       name: "Old Fashioned",
       category: "cocktails",
       ingredients: "Whisky Bourbon, azúcar, amargo de Angostura y piel de naranja fresca.",
       description: "Para los amantes de los sabores intensos y maduros. El cóctel más icónico de la historia, perfumado con cítricos.",
-      image: "https://images.unsplash.com/photo-1514218240783-940066a4b6c7?q=80&w=800&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1470338745628-171cf53de3a8?q=80&w=800&auto=format&fit=crop"
     },
     {
       name: "Negroni",
@@ -56,7 +56,7 @@ export function MenuSection() {
       category: "cocktails",
       ingredients: "Ron blanco, jugo de lima exprimido y jarabe de goma.",
       description: "Simple, elegante y refrescante. Un trago puramente cítrico batido en coctelera para lograr una textura ideal.",
-      image: "https://images.unsplash.com/photo-1543007630-9710e4a00a20?q=80&w=800&auto=format&fit=crop"
+      image: "/images/daiquiri-lima.png"
     },
     {
       name: "Cosmopolitan",
@@ -70,7 +70,7 @@ export function MenuSection() {
       category: "cocktails",
       ingredients: "Whisky Bourbon, limón, jarabe de goma y clara de huevo para la espuma.",
       description: "Suave textura sedosa y espuma persistente que equilibra la potencia del Bourbon con las notas cítricas del limón.",
-      image: "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?q=80&w=800&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1560512823-829485b8bf24?q=80&w=800&auto=format&fit=crop"
     },
     // Mocktails (Sin alcohol)
     {
@@ -85,12 +85,12 @@ export function MenuSection() {
       category: "mocktails",
       ingredients: "Pulpa de piña madura, crema de coco gourmet, hielo licuado y cereza.",
       description: "Textura cremosa y un sabor tropical insuperable. Un clásico sin alcohol dulce, refrescante y reconfortante.",
-      image: "https://images.unsplash.com/photo-1579954115545-a95591f28bfc?q=80&w=800&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1587223962930-cb7f31384c19?q=80&w=800&auto=format&fit=crop"
     },
     {
       name: "Berry Lemonade",
       category: "mocktails",
-      ingredients: "Mix de frutos rojos (fresa, frambuesa, arándano), jugo de limón, jarabe y soda.",
+      ingredients: "Mix de frutos rojos (fresa y arándano), jugo de limón, jarabe y soda.",
       description: "Una explosión burbujeante y frutal de color intenso que combina la acidez del limón con el dulzor natural de las bayas.",
       image: "https://images.unsplash.com/photo-1621263764928-df1444c5e859?q=80&w=800&auto=format&fit=crop"
     },
@@ -101,13 +101,7 @@ export function MenuSection() {
       description: "Variante exótica y vibrante de nuestro clásico sunset. Notas intensamente tropicales de piña y maracuyá con un acabado dulce y efervescente.",
       image: "/images/Sunset Cooler Tropical.webp"
     },
-    {
-      name: "Sunset Cooler",
-      category: "mocktails",
-      ingredients: "Jugo de naranja natural, jarabe de granadina artesanal y soda helada.",
-      description: "Un deleite visual en capas que imita un atardecer. Cítrico, dulce y sumamente burbujeante.",
-      image: "https://images.unsplash.com/photo-1556881286-fc6915169721?q=80&w=800&auto=format&fit=crop"
-    },
+
     {
       name: "Shirley Temple",
       category: "mocktails",
