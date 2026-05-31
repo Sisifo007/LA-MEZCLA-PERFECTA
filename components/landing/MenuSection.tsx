@@ -21,7 +21,7 @@ export function MenuSection() {
       category: "cocktails",
       ingredients: "Pisco Quebranta, limón norteño, jarabe de goma, clara de huevo y amargo de Angostura.",
       description: "La joya de la coctelería peruana. Un balance perfecto entre la acidez del limón, el dulzor del jarabe y el carácter del pisco.",
-      image: "/images/pisco-sour.png"
+      image: "/images/pisco-sour-v2.png"
     },
     {
       name: "Mojito Clásico",
@@ -35,14 +35,14 @@ export function MenuSection() {
       category: "cocktails",
       ingredients: "Tequila reposado, triple sec, jugo de lima fresca y borde escarchado de sal.",
       description: "Un clásico mexicano sofisticado y cítrico que resalta las notas herbales del agave azul con el balance del licor de naranja.",
-      image: "/images/margarita-clasica.png"
+      image: "/images/margarita-clasica-v2.png"
     },
     {
       name: "Old Fashioned",
       category: "cocktails",
       ingredients: "Whisky Bourbon, azúcar, amargo de Angostura y piel de naranja fresca.",
       description: "Para los amantes de los sabores intensos y maduros. El cóctel más icónico de la historia, perfumado con cítricos.",
-      image: "https://images.unsplash.com/photo-1470338745628-171cf53de3a8?q=80&w=800&auto=format&fit=crop"
+      image: "/images/old-fashioned.png"
     },
     {
       name: "Negroni",
@@ -56,7 +56,7 @@ export function MenuSection() {
       category: "cocktails",
       ingredients: "Ron blanco, jugo de lima exprimido y jarabe de goma.",
       description: "Simple, elegante y refrescante. Un trago puramente cítrico batido en coctelera para lograr una textura ideal.",
-      image: "/images/daiquiri-lima.png"
+      image: "/images/daiquiri-lima-v2.png"
     },
     {
       name: "Cosmopolitan",
@@ -70,7 +70,7 @@ export function MenuSection() {
       category: "cocktails",
       ingredients: "Whisky Bourbon, limón, jarabe de goma y clara de huevo para la espuma.",
       description: "Suave textura sedosa y espuma persistente que equilibra la potencia del Bourbon con las notas cítricas del limón.",
-      image: "https://images.unsplash.com/photo-1560512823-829485b8bf24?q=80&w=800&auto=format&fit=crop"
+      image: "/images/whisky-sour.png"
     },
     // Mocktails (Sin alcohol)
     {
@@ -83,9 +83,9 @@ export function MenuSection() {
     {
       name: "Virgin Piña Colada",
       category: "mocktails",
-      ingredients: "Pulpa de piña madura, crema de coco gourmet, hielo licuado y cereza.",
+      ingredients: "Pulpa de piña madura, crema de coco gourmet, hielo licuado y fresas frescas.",
       description: "Textura cremosa y un sabor tropical insuperable. Un clásico sin alcohol dulce, refrescante y reconfortante.",
-      image: "https://images.unsplash.com/photo-1587223962930-cb7f31384c19?q=80&w=800&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1623428187969-5da2dcea5ebf?q=80&w=800&auto=format&fit=crop"
     },
     {
       name: "Berry Lemonade",
@@ -94,21 +94,7 @@ export function MenuSection() {
       description: "Una explosión burbujeante y frutal de color intenso que combina la acidez del limón con el dulzor natural de las bayas.",
       image: "https://images.unsplash.com/photo-1621263764928-df1444c5e859?q=80&w=800&auto=format&fit=crop"
     },
-    {
-      name: "Sunset Cooler Tropical",
-      category: "mocktails",
-      ingredients: "Jugo de piña, pulpa de maracuyá, jarabe de granadina artesanal y soda helada.",
-      description: "Variante exótica y vibrante de nuestro clásico sunset. Notas intensamente tropicales de piña y maracuyá con un acabado dulce y efervescente.",
-      image: "/images/Sunset Cooler Tropical.webp"
-    },
 
-    {
-      name: "Shirley Temple",
-      category: "mocktails",
-      ingredients: "Ginger ale premium, toque de granadina artesanal y cereza al marrasquino.",
-      description: "El mocktail más famoso del mundo. Una bebida dulce y efervescente que deleita por su sencillez y sabor.",
-      image: "https://images.unsplash.com/photo-1556881286-fc6915169721?q=80&w=800&auto=format&fit=crop"
-    }
   ];
 
   const filteredItems = menuItems.filter(
