@@ -12,11 +12,21 @@ export function HeroSection() {
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center animate-fade-in-up">
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-gold mb-8 animate-fade-in delay-200">
-          <span className="w-2 h-2 rounded-full bg-[var(--color-gold)] animate-pulse-gold"></span>
-          <span className="text-sm font-medium tracking-wide text-[var(--color-gold-light)] uppercase">
-            Servicio Premium en Lima y Callao
-          </span>
+        {/* Brand Logo - Centered and highly visible */}
+        <div className="flex flex-col items-center mb-6">
+          <div className="relative w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden border border-[var(--color-gold)]/40 flex items-center justify-center bg-[var(--color-surface)] shadow-[0_0_40px_rgba(201,168,76,0.2)] animate-float mb-4">
+            <img 
+              src="/images/logo.png" 
+              alt="Logo La Mezcla Perfecta" 
+              className="w-full h-full object-cover scale-[1.05]"
+            />
+          </div>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-gold animate-fade-in delay-200">
+            <span className="w-2 h-2 rounded-full bg-[var(--color-gold)] animate-pulse-gold"></span>
+            <span className="text-sm font-medium tracking-wide text-[var(--color-gold-light)] uppercase">
+              Servicio Premium en Lima y Callao
+            </span>
+          </div>
         </div>
         
         <h1 className="text-5xl md:text-7xl font-bold mb-6 text-foreground">

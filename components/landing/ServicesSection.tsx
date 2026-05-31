@@ -14,7 +14,7 @@ export function ServicesSection() {
     },
     {
       title: "Servicio Integral",
-      description: "Nos encargamos del personal de bar, insumos premium, cristalería fina, hielo y todo lo necesario. Tú solo disfrutas de la fiesta.",
+      description: "Nos encargamos del personal de bar, insumos de calidad, cristalería, hielo y todo lo necesario. Tú solo disfrutas de la fiesta.",
       icon: <Wine className="w-8 h-8 text-[var(--color-gold)]" />
     }
   ];

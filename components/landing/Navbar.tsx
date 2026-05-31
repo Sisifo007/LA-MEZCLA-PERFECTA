@@ -23,7 +23,7 @@ export function Navbar() {
   const navLinks = [
     { name: "Inicio", href: "#" },
     { name: "Servicios", href: "#servicios" },
-    { name: "Carta Premium", href: "#carta" },
+    { name: "Carta Base", href: "#carta" },
     { name: "Cotizar", href: "#cotizar" },
   ];
 
