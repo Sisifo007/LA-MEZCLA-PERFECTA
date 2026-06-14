@@ -23,7 +23,7 @@ export function Sidebar() {
           <Wine className="w-5 h-5 text-black" />
         </div>
         <span className="font-display font-bold text-lg tracking-wider text-gradient-gold uppercase select-none">
-          LA MEZCLA PERFECTA
+          LUMEN <span className="font-light">OPEN BAR</span>
         </span>
       </div>
 

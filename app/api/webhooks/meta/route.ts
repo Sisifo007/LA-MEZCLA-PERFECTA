@@ -140,7 +140,7 @@ export async function POST(request: Request) {
                 ]);
 
               // 4. Enviar WhatsApp automático
-              const wsMsg = `¡Hola ${name}! 🍸 Vimos que solicitaste información en Facebook sobre nuestro servicio premium de coctelería para eventos LA MEZCLA PERFECTA. En breve un asesor te contactará. ¿Cuéntanos de qué tipo es tu evento y en qué fecha aproximada?`;
+              const wsMsg = `¡Hola ${name}! 🍸 Vimos que solicitaste información en Facebook sobre nuestro servicio premium de coctelería para eventos LUMEN RESTOBAR. En breve un asesor te contactará. ¿Cuéntanos de qué tipo es tu evento y en qué fecha aproximada?`;
               const wsResult = await sendWhatsAppMessage(phone, wsMsg);
               
               if (wsResult.success) {

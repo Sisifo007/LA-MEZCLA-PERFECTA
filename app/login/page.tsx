@@ -15,7 +15,7 @@ export default async function LoginPage({
             <Martini className="w-8 h-8 text-[var(--color-gold)]" />
           </div>
           <h2 className="text-center text-3xl font-bold font-display text-[var(--color-gold)] tracking-wide">
-            La Mezcla Perfecta
+            Lumen Restobar
           </h2>
           <p className="mt-2 text-center text-sm text-muted-foreground">
             Inicia sesión en tu panel de administración

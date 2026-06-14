@@ -42,12 +42,12 @@ export function Navbar() {
           <div className="relative w-10 h-10 rounded-full overflow-hidden border border-[var(--color-gold)/30] flex items-center justify-center transition-transform group-hover:scale-105 duration-300 bg-[var(--color-surface)]">
             <img 
               src="/images/logo.png" 
-              alt="Logo La Mezcla Perfecta" 
+              alt="Logo LUMEN OPEN BAR" 
               className="w-full h-full object-cover scale-[1.05]"
             />
           </div>
           <span className="font-display font-bold text-lg tracking-widest text-gradient-gold uppercase select-none">
-            LA MEZCLA PERFECTA
+            LUMEN <span className="font-light">OPEN BAR</span>
           </span>
         </a>
 

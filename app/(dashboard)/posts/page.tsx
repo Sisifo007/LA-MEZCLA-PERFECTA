@@ -114,10 +114,10 @@ export default async function PostsPage() {
             <h3 className="font-bold font-display text-[var(--color-gold)] mb-2">Conectado a Meta</h3>
             <p className="text-sm text-muted-foreground mb-4">Tus cuentas de Facebook e Instagram están vinculadas correctamente para publicación automática.</p>
             <div className="flex items-center gap-2 text-sm text-foreground">
-              <Facebook className="w-4 h-4 text-[#3b5998]" /> La Mezcla Perfecta (Página)
+              <Facebook className="w-4 h-4 text-[#3b5998]" /> LUMEN OPEN BAR (Página)
             </div>
             <div className="flex items-center gap-2 text-sm text-foreground mt-2">
-              <Instagram className="w-4 h-4 text-[#E1306C]" /> @lamezclaperfecta
+              <Instagram className="w-4 h-4 text-[#E1306C]" /> @lumenopenbar
             </div>
           </div>
         </div>

@@ -14,11 +14,11 @@ export function HeroSection() {
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center animate-fade-in-up">
         {/* Brand Logo - Centered and highly visible */}
         <div className="flex flex-col items-center mb-6">
-          <div className="relative w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden border border-[var(--color-gold)]/40 flex items-center justify-center bg-[var(--color-surface)] shadow-[0_0_40px_rgba(201,168,76,0.2)] animate-float mb-4">
+          <div className="relative w-[220px] h-[220px] md:w-[280px] md:h-[280px] flex items-center justify-center animate-float mb-2 drop-shadow-[0_0_45px_rgba(201,168,76,0.35)]">
             <img 
               src="/images/logo.png" 
-              alt="Logo La Mezcla Perfecta" 
-              className="w-full h-full object-cover scale-[1.05]"
+              alt="Logo LUMEN OPEN BAR" 
+              className="w-full h-full object-contain"
             />
           </div>
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-gold animate-fade-in delay-200">

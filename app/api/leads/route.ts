@@ -54,7 +54,7 @@ export async function POST(request: Request) {
     // Por ahora usamos un mensaje de texto simple si ya hubiese una sesión de 24h,
     // o puedes cambiarlo a sendWhatsAppTemplateMessage("hello_world", "en_US") para probar.
     
-    const wsMsg = `¡Hola ${name}! 🍸 Hemos recibido tu solicitud de cotización en LA MEZCLA PERFECTA. En breve uno de nuestros expertos se pondrá en contacto contigo para darte todos los detalles de tu evento${type ? ` (${type})` : ''}.`;
+    const wsMsg = `¡Hola ${name}! 🍸 Hemos recibido tu solicitud de cotización en LUMEN OPEN BAR. En breve uno de nuestros expertos se pondrá en contacto contigo para darte todos los detalles de tu evento${type ? ` (${type})` : ''}.`;
     
     const wsResult = await sendWhatsAppMessage(phone, wsMsg);
 

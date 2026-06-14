@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-display" });
 
 export const metadata: Metadata = {
-  title: "LA MEZCLA PERFECTA | Servicio de Coctelería Premium en Lima",
+  title: "LUMEN RESTOBAR | Servicio de Coctelería Premium en Lima",
   description:
     "Transforma tu evento en Lima y Callao con nuestro servicio de coctelería profesional. Cócteles con y sin alcohol para bodas, corporativos y fiestas privadas. Cotiza en Soles en minutos.",
   keywords: [
@@ -21,16 +21,16 @@ export const metadata: Metadata = {
     "coctelería y moctelería profesional Perú",
   ],
   openGraph: {
-    title: "LA MEZCLA PERFECTA | Servicio de Coctelería Premium en Lima",
+    title: "LUMEN RESTOBAR | Servicio de Coctelería Premium en Lima",
     description:
       "Servicio de coctelería profesional para todo tipo de eventos en Lima y Callao. ¡Cotiza tu evento en minutos!",
     type: "website",
     locale: "es_PE",
-    siteName: "LA MEZCLA PERFECTA",
+    siteName: "LUMEN RESTOBAR",
   },
   twitter: {
     card: "summary_large_image",
-    title: "LA MEZCLA PERFECTA | Servicio de Coctelería en Lima",
+    title: "LUMEN RESTOBAR | Servicio de Coctelería en Lima",
     description:
       "Servicio de coctelería profesional para eventos en Lima y Callao.",
   },

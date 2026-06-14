@@ -235,7 +235,7 @@ export default function NewPostPage() {
             <div className="p-3 flex items-center gap-2 border-b border-gray-100">
               <div className="w-8 h-8 rounded-full bg-[var(--color-gold)] flex items-center justify-center text-[10px] text-black font-bold">LMP</div>
               <div>
-                <div className="text-xs font-bold text-gray-900">La Mezcla Perfecta</div>
+                <div className="text-xs font-bold text-gray-900">Lumen Restobar</div>
                 <div className="text-[10px] text-gray-500">Justo ahora • 🌎</div>
               </div>
             </div>

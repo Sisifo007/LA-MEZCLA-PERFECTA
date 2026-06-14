@@ -51,7 +51,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-center md:text-left">
             <span className="font-display font-bold text-base tracking-widest text-gradient-gold uppercase block mb-1">
-              LA MEZCLA PERFECTA
+              LUMEN <span className="font-light">OPEN BAR</span>
             </span>
             <p className="text-xs">© {new Date().getFullYear()} Servicio premium en Lima y Callao. Todos los derechos reservados.</p>
           </div>
@@ -62,7 +62,7 @@ export default function Home() {
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-muted-foreground hover:text-[var(--color-gold-light)] transition-all duration-300 p-2.5 rounded-full border border-[var(--color-border)] bg-background/40 hover:bg-background/80 shadow-md flex items-center justify-center hover:scale-105"
-              aria-label="Facebook de La Mezcla Perfecta"
+              aria-label="Facebook de LUMEN OPEN BAR"
             >
               <FacebookIcon className="w-5 h-5" />
             </a>
@@ -71,7 +71,7 @@ export default function Home() {
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-muted-foreground hover:text-[var(--color-gold-light)] transition-all duration-300 p-2.5 rounded-full border border-[var(--color-border)] bg-background/40 hover:bg-background/80 shadow-md flex items-center justify-center hover:scale-105"
-              aria-label="Instagram de La Mezcla Perfecta"
+              aria-label="Instagram de LUMEN OPEN BAR"
             >
               <InstagramIcon className="w-5 h-5" />
             </a>
