@@ -172,7 +172,7 @@ export function MenuSection() {
               className="card-glass hover:scale-[1.02] flex flex-col justify-between overflow-hidden group transition-all duration-300 h-full border border-[var(--color-border)] hover:border-[var(--color-gold)] p-0"
             >
               {/* Card Image Header */}
-              <div className="relative aspect-[4/3] w-full overflow-hidden bg-muted">
+              <div className="relative aspect-[4/5] w-full overflow-hidden bg-muted">
                 {/* Category Badge */}
                 <div className="absolute top-4 right-4 z-20">
                   <span className={`text-[10px] uppercase font-bold tracking-widest px-2.5 py-1 rounded-full shadow-md backdrop-blur-md border ${
