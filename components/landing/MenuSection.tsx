@@ -94,6 +94,13 @@ export function MenuSection() {
       description: "Una explosión burbujeante y frutal de color intenso que combina la acidez del limón con el dulzor natural de las bayas.",
       image: "https://images.unsplash.com/photo-1621263764928-df1444c5e859?q=80&w=800&auto=format&fit=crop"
     },
+    {
+      name: "Sunset Cooler Tropical",
+      category: "mocktails",
+      ingredients: "Jugo de maracuyá, néctar de mango, un toque de granadina y ginger ale.",
+      description: "Los hermosos colores del atardecer capturados en una bebida dulce, vibrante y refrescante con todo el sabor del trópico.",
+      image: "https://images.unsplash.com/photo-1595981267035-7b04d84b4f1c?q=80&w=800&auto=format&fit=crop"
+    },
 
   ];
 
