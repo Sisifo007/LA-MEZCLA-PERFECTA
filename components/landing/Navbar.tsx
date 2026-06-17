@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Martini, Menu, X } from "lucide-react";
+import { FacebookIcon, InstagramIcon } from "@/components/ui/social-icons";
 import { cn } from "@/lib/utils";
 
 export function Navbar() {
@@ -24,7 +25,6 @@ export function Navbar() {
     { name: "Inicio", href: "#" },
     { name: "Servicios", href: "#servicios" },
     { name: "Carta Base", href: "#carta" },
-    { name: "Cotizar", href: "#cotizar" },
   ];
 
   return (
@@ -62,6 +62,31 @@ export function Navbar() {
               {link.name}
             </a>
           ))}
+          
+          {/* Social Icons in Navbar */}
+          <div className="flex items-center gap-4 border-l border-[var(--color-border)] pl-6">
+            <a 
+              href="https://facebook.com/lumenopenbar" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-muted-foreground hover:text-[var(--color-gold-light)] transition-colors duration-200 flex items-center gap-1.5 group"
+              aria-label="Facebook de LUMEN OPEN BAR"
+            >
+              <FacebookIcon className="w-4 h-4 group-hover:scale-110 transition-transform" />
+              <span className="text-[10px] font-bold tracking-wider hidden lg:inline-block">LUMEN OPEN BAR</span>
+            </a>
+            <a 
+              href="https://instagram.com/lumenopenbar" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-muted-foreground hover:text-[var(--color-gold-light)] transition-colors duration-200 flex items-center gap-1.5 group"
+              aria-label="Instagram de LUMEN OPEN BAR"
+            >
+              <InstagramIcon className="w-4 h-4 group-hover:scale-110 transition-transform" />
+              <span className="text-[10px] font-bold tracking-wider hidden lg:inline-block">@lumenopenbar</span>
+            </a>
+          </div>
+
           <a
             href="#cotizar"
             className="btn-primary py-2 px-6 text-sm font-semibold rounded-lg shadow-sm"
@@ -100,6 +125,25 @@ export function Navbar() {
           >
             Cotizar Evento
           </a>
+          {/* Mobile Social Icons */}
+          <div className="flex items-center justify-center gap-6 pt-4 border-t border-[var(--color-border)] mt-2">
+            <a 
+              href="https://facebook.com/lumenopenbar" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-muted-foreground hover:text-[var(--color-gold-light)] transition-colors duration-200 flex flex-col items-center gap-1.5 text-xs font-semibold"
+            >
+              <FacebookIcon className="w-5 h-5" /> LUMEN OPEN BAR
+            </a>
+            <a 
+              href="https://instagram.com/lumenopenbar" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-muted-foreground hover:text-[var(--color-gold-light)] transition-colors duration-200 flex flex-col items-center gap-1.5 text-xs font-semibold"
+            >
+              <InstagramIcon className="w-5 h-5" /> @lumenopenbar
+            </a>
+          </div>
         </div>
       )}
     </header>

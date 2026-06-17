@@ -19,7 +19,7 @@ export function MenuSection() {
     {
       name: "Pisco Sour",
       category: "cocktails",
-      ingredients: "Pisco Quebranta, limón norteño, jarabe de goma, clara de huevo y amargo de Angostura.",
+      ingredients: "Pisco Quebranta, limón norteño, jarabe de goma, clara de huevo y amargo de angostura",
       description: "La joya de la coctelería peruana. Un balance perfecto entre la acidez del limón, el dulzor del jarabe y el carácter del pisco.",
       image: "/images/pisco-sour-v2.png"
     },
@@ -40,7 +40,7 @@ export function MenuSection() {
     {
       name: "Old Fashioned",
       category: "cocktails",
-      ingredients: "Whisky Bourbon, azúcar, amargo de Angostura y piel de naranja fresca.",
+      ingredients: "Whisky Bourbon, azúcar, amargo de angostura y piel de naranja fresca",
       description: "Para los amantes de los sabores intensos y maduros. El cóctel más icónico de la historia, perfumado con cítricos.",
       image: "/images/old-fashioned.png"
     },

@@ -58,7 +58,7 @@ export default function Home() {
           
           <div className="flex items-center gap-4">
             <a 
-              href="https://facebook.com/61568765477313" 
+              href="https://facebook.com/lumenopenbar" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-muted-foreground hover:text-[var(--color-gold-light)] transition-all duration-300 p-2.5 rounded-full border border-[var(--color-border)] bg-background/40 hover:bg-background/80 shadow-md flex items-center justify-center hover:scale-105"
@@ -67,7 +67,7 @@ export default function Home() {
               <FacebookIcon className="w-5 h-5" />
             </a>
             <a 
-              href="https://instagram.com/lamezclaperfecta" 
+              href="https://instagram.com/lumenopenbar" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-muted-foreground hover:text-[var(--color-gold-light)] transition-all duration-300 p-2.5 rounded-full border border-[var(--color-border)] bg-background/40 hover:bg-background/80 shadow-md flex items-center justify-center hover:scale-105"
