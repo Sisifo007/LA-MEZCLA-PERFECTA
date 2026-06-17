@@ -166,6 +166,71 @@ export async function POST(request: Request) {
       }
 
       return new NextResponse("EVENT_RECEIVED", { status: 200 });
+    } else if (body.object === "whatsapp_business_account") {
+      // 5. Soporte para mensajes entrantes de WhatsApp
+      for (const entry of body.entry) {
+        for (const change of entry.changes || []) {
+          if (change.value && change.value.messages) {
+            const message = change.value.messages[0];
+            const contact = change.value.contacts?.[0];
+            
+            const incomingPhone = message.from;
+            const textContent = message.text?.body || "";
+            const contactName = contact?.profile?.name || "Cliente";
+
+            console.log(`Mensaje recibido de WhatsApp (${incomingPhone}): ${textContent}`);
+
+            // Buscar si el lead ya existe en la base de datos
+            let { data: lead } = await supabase
+              .from("leads")
+              .select("*")
+              .eq("phone", incomingPhone)
+              .single();
+
+            // Si no existe, creamos un lead "Nuevo"
+            if (!lead) {
+              const { data: newLead } = await supabase
+                .from("leads")
+                .insert([
+                  {
+                    name: contactName,
+                    phone: incomingPhone,
+                    source: "whatsapp_direct",
+                    status: "Nuevo",
+                    message: "Inició conversación por WhatsApp",
+                  }
+                ])
+                .select()
+                .single();
+              
+              lead = newLead;
+
+              // Como es nuevo, mandamos mensaje automático de bienvenida
+              const autoReply = `¡Hola ${contactName}! Somos LUMEN OPEN BAR 🍸. Hemos recibido tu mensaje. ¿En qué podemos ayudarte para tu próximo evento?`;
+              await sendWhatsAppMessage(incomingPhone, autoReply);
+
+              // Guardamos la auto respuesta en interacciones
+              await supabase.from("interactions").insert([
+                { lead_id: lead.id, type: "whatsapp_auto", content: autoReply, direction: "saliente" }
+              ]);
+            }
+
+            // Guardar el mensaje entrante en interacciones
+            if (lead) {
+              await supabase.from("interactions").insert([
+                {
+                  lead_id: lead.id,
+                  type: "whatsapp_manual",
+                  content: textContent,
+                  direction: "entrante",
+                }
+              ]);
+            }
+          }
+        }
+      }
+
+      return new NextResponse("EVENT_RECEIVED", { status: 200 });
     } else {
       return new NextResponse("Not Found", { status: 404 });
     }
